@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <title>How Old Are You?</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aihaiti's Portfolio Page">
+    <link rel="stylesheet" href="task102.css">
+</head>
+
+
+<body>
+    <!--Body starts here-->
+
+    <!--First container for header and main content area-->
+    <div id="task102-one">
+
+
+        <div id="">
+            <!--header-->
+            <img src="ok.svg">
+            <h1 id="task102-title">TASK1.02</h1>
+            <hr id="task102-line">
+        </div>
+        <!--end of header-->
+
+
+        <div id="task102-main">
+            <!--Start of main content area-->
+            <div id="task102-p1">
+                <h1>How Old Are You?</h1>
+
+                <form id="task102-form">
+
+                    <label class="task102-label">...Birth year...</label>
+                    <br>
+
+                    <input onkeyup="validateBirthYear()" type="text" id="task102-birth" value="">
+
+                    <br>
+                    <label id="task102-year1"></label>
+                    <br>
+
+
+                    <button type="button" onclick="calculateAge()" id="task102btn1">
+                        CALCULATE
+                    </button>
+
+                    <button type="button" onclick="tryMore()" id="task102btn2">
+                        CALCULATE AGAIN
+                    </button>
+
+                </form>
+
+                <!--Answers appear here-->
+                <p><span id="task102-age1">ANS:</span></p>
+            </div>
+
+
+            <!--Javascript functions for calculator start from here-->
+            <script>
+                //validating the user input for birth year
+                function validateBirthYear() {
+                    var birth_year = document.getElementById("task102-birth").value;
+                    if (birth_year.length == 0) {
+                        makeAlert("Year number is required !", "task102year1", "red");
+                        return false;
+                    }
+
+                    if (!birth_year.match(/^[0-9]{4}$/)) {
+                        makeAlert("Four digits with year format...,", "task102-year1", "red");
+                        return false;
+                    }
+
+
+                    makeAlert("", "task102-year1", "");
+                    return true;
+                }
+
+
+                //Get current year
+                function getCurrentYear() {
+                    var today = new Date();
+                    var currentYear = today.getFullYear();
+                    return document.getElementById("curr").innerHTML = "The current Year is : " + currentYear;
+                }
+
+
+                function calculateAge(birthYear, currentYear) {
+                    var today = new Date();
+                    var currentYear = today.getFullYear();
+
+                    var birthYear = document.getElementById("task102-birth").value;
+
+                    if (birthYear == "") {
+                        makeAlert("Please write Birth Year...", "task102-age1", "red");
+                        return false;
+                    }
+
+                    if ((currentYear - birthYear) < 0) {
+                        makeAlert("Your birth year should be less than current year...", "task102-age1", "red");
+                        return false;
+
+                    } else {
+                        makeAlert("", "task102-age1", "");
+                        var age = document.getElementById("task102-age1").innerHTML = "You are either " + (currentYear - birthYear) + " or " + (currentYear - birthYear - 1);
+                        return age;
+                    }
+                }
+
+
+                //Reset and try more
+                function tryMore() {
+                    location.reload();
+                }
+
+
+                //Error alerts
+                function makeAlert(message, alertLocation, color) {
+                    document.getElementById(alertLocation).innerHTML = message;
+                    document.getElementById(alertLocation).style.color = color;
+                }
+            </script>
+            <!--End of javascript file-->
+
+
+            <div id="task102-p2">
+                <h1>Performence Check</h1>
+
+                <!---checkbox start here------------------------------>
+
+                <section>
+                    <!--checkbox one-->
+                    <h4>Fair</h4>
+                    <div class="checkboxThree1102">
+
+                        <input type="checkbox" value="1" id="checkboxThreeInput1102" name="" />
+                        <label for="checkboxThreeInput1102"></label>
+                    </div>
+                </section>
+
+
+                <section>
+                    <!--checkbox one-->
+                    <h4>Good</h4>
+                    <div class="checkboxThree2102">
+
+                        <input type="checkbox" value="1" id="checkboxThreeInput2102" name="" />
+                        <label for="checkboxThreeInput2102"></label>
+                    </div>
+                </section>
+
+
+                <section>
+                    <!--checkbox one-->
+                    <h4>Excellent</h4>
+                    <div class="checkboxThree3102">
+
+                        <input type="checkbox" value="1" id="checkboxThreeInput3102" name="" />
+                        <label for="checkboxThreeInput3102"></label>
+                    </div>
+                </section>
+
+                <!---checkbox end here-------------------------------->
+
+
+                <button type="button" id="task102btn3" onclick="printIt()">
+                    SAVE
+                </button>
+
+
+                <script>
+                    function printIt() {
+                        window.print();
+                    }
+                </script>
+
+
+            </div>
+
+
+        </div>
+        <!--End of main container-->
+
+
+        <div id="task102-footer">
+            <!--Start of footer-->
+
+            <div id="task102-copy">
+                <p>&copy; Copyright 2016 <span id="kootkot">Aihaiti</span> - All Rights Reserved
+                </p>
+            </div>
+
+        </div>
+        <!--End of footer-->
+    </div>
+    <!--End of first container-->
+</body>
+
+</html>

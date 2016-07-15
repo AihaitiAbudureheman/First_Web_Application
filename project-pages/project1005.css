@@ -1,0 +1,92 @@
+body {
+    padding-top: 20px;
+}
+
+/*style for logo*/
+
+#project-logo {
+    margin-bottom: 20px;
+}
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+/* Customize the nav-justified links to be fill the entire space of the .navbar */
+
+
+/*This is the code for added new style*/
+
+.naves> a:hover {
+    color: #de4f4f;
+}
+
+/* style the code or file name in the description*/
+
+.code {
+    padding: 1px;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+}
+
+/* style the syntax container left border*/
+
+.syntax {
+    border-left: 20px solid #de4f4f;
+}
+
+/* style the syntax container top title area*/
+
+.syntax-top {
+    padding: 0px;
+    margin: 0px;
+    height: 30px;
+    width: 100%;
+    background-color: #F5F2F0;
+    line-height: 30px;
+    border-radius: 2px;
+}
+
+/* file names on the right*/
+
+.right {
+    float: right;
+    position: relative;
+    right: 20px;
+    color: #de4f4f;
+}
+
+/* WHAT TO DO on the left*/
+
+.left {
+    position: relative;
+    left: 20px;
+}
+.kootkot {
+    color: #de4f4f;
+}
+
+/*style for share buttons*/
+
+.buttons {
+    width: 100%;
+    height: 25px;
+    border: 1px solid white;
+}
+.fb-share-button {
+    position: relative;
+    top: -4px;
+}
+
+/* Responsive: Portrait tablets and up */
+
+@media screen and (min-width: 768px) {
+    /* Remove the padding we set earlier */
+    .masthead, .marketing, .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

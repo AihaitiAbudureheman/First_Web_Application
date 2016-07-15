@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <title>Let's Do Some Math</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aihaiti's Portfolio Page">
+    <link rel="stylesheet" href="task301.css">
+</head>
+
+
+<body>
+    <!--Body starts here-->
+
+
+    <div id="task301-one">
+        <!--First container for header and main content area-->
+        <div id="">
+            <!--header-->
+            <img src="ok.svg">
+            <h1 id="task301-title">TASK3.01</h1>
+            <hr id="task301-line">
+        </div>
+        <!--end of header-->
+
+
+        <div id="task301-main">
+            <!--Start of main content area-->
+            <div id="task301-p1">
+                <h1>Let's Do Some Math</h1>
+                <form id="task301-form">
+                    <label class="task301-label">...The Radius...</label>
+                    <br>
+
+                    <input onkeyup="validateRadius()" type="text" id="radius">
+                    <label id="error1301"></label>
+                    <br>
+
+
+                    <button type="button" onclick="calcCircumfrence()" id="task301btn1">PERIMETER</button>
+
+                    <button type="button" onclick="calcArea()" id="task301btn0">AREA</button>
+
+                    <button type="button" onclick="tryMore()" id="task301btn2">RESET </button>
+                </form>
+                <p>
+                    <span id="age1301"></span>
+                    <br>
+                    <span id="age2301"></span>
+                </p>
+            </div>
+
+
+            <!--Javascript functions for calculator start from here-->
+            <script>
+                //validating the user input for daily amount
+                function validateRadius() {
+                    var daily_amount = document.getElementById("radius").value;
+                    if (daily_amount.length == 0) {
+                        makeAlert("Radius is required...", "error1301", "red");
+                        return false;
+                    }
+
+                    if (!daily_amount.match(/[1-9]*\.[0-9]+/) && !daily_amount.match(/^[0-9]*$/)) {
+                        makeAlert("Accept both floating point and integer numbers...", "error1301", "red");
+                        return false;
+                    }
+
+
+                    makeAlert("", "error1301", "green");
+                    return true;
+                }
+
+                //validate the user input for age
+
+
+                function calcCircumfrence(radius) {
+
+                    var radius = document.getElementById("radius").value;
+
+                    if (radius == "") {
+                        makeAlert("Please fill required fills...", "age1301", "");
+                        return false;
+                    }
+
+                    var circum = 2 * Math.PI * radius;
+                    var circumfrences = circum.toFixed(2);
+
+                    return document.getElementById("age1301").innerHTML = "The Circumference " + circumfrences;
+
+
+                }
+
+                function calcArea(radius) {
+
+                    var radius = document.getElementById("radius").value;
+
+                    if (radius == "") {
+                        makeAlert("Please fill required fields...", "age1301", "");
+                        return false;
+                    }
+
+                    var area = (Math.PI * radius * radius);
+                    var final = area.toFixed(2);
+
+                    return document.getElementById("age2301").innerHTML = "The area is " + final;
+
+
+                }
+
+                function tryMore() {
+                    location.reload();
+                }
+
+                function makeAlert(message, alertLocation, color) {
+                    document.getElementById(alertLocation).innerHTML = message;
+                    document.getElementById(alertLocation).style.color = color;
+                }
+            </script>
+            <!--End of javascript file-->
+
+
+            <div id="task301-p2">
+                <h1>Performence Check</h1>
+
+                <!---checkbox end here-------------------------------->
+                <!--checkbox end here------------------------------->
+                <section>
+                    <!--checkbox one-->
+                    <h4>Fair</h4>
+                    <div class="checkboxThree1301">
+
+                        <input type="checkbox" value="1" id="checkboxThreeInput1301" name="" />
+                        <label for="checkboxThreeInput1301"></label>
+                    </div>
+                </section>
+
+                <section>
+                    <!--checkbox one-->
+                    <h4>Good</h4>
+                    <div class="checkboxThree2301">
+
+                        <input type="checkbox" value="1" id="checkboxThreeInput2301" name="" />
+                        <label for="checkboxThreeInput2301"></label>
+                    </div>
+                </section>
+
+                <section>
+                    <!--checkbox one-->
+                    <h4>Excellent</h4>
+                    <div class="checkboxThree3301">
+
+                        <input type="checkbox" value="1" id="checkboxThreeInput3301" name="" />
+                        <label for="checkboxThreeInput3301"></label>
+                    </div>
+                </section>
+
+                <!--checkbox end here-------------------------------->
+                <button type="button" id="task301btn3" onclick="printIt()">SAVE</button>
+                <script>
+                    function printIt() {
+                        window.print();
+                    }
+                </script>
+            </div>
+
+
+        </div>
+        <!--End of main container-->
+
+        <div id="task301-footer">
+            <!--Start of footer-->
+            <div id="task301-copy">
+                <p>&copy; Copyright 2016 <span id="kootkot">Aihaiti</span> - All Rights Reserved
+                </p>
+            </div>
+        </div>
+        <!--End of footer-->
+    </div>
+    <!--End of first container-->
+</body>
+
+</html>

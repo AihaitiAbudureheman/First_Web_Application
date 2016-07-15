@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <title>Temperature Converter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aihaiti's Portfolio Page">
+    <link rel="stylesheet" href="task401.css">
+</head>
+
+
+<body>
+    <!--Body starts here-->
+
+
+    <div id="task401-one">
+        <!--First container for header and main content area-->
+        <div id="">
+            <!--header-->
+            <img src="ok.svg">
+            <h1 id="task401-title">TASK4.01</h1>
+            <hr id="task401-line">
+        </div>
+        <!--end of header-->
+
+
+        <div id="task401-main">
+            <!--Start of main content area-->
+            <div id="task401-p1">
+                <h1>Let's Do Some Conversion</h1>
+                <form id="task401-form">
+                    <label class="task401-label">...The Amount...</label>
+                    <br>
+
+                    <input onkeyup="validateAmount()" type="text" id="temp">
+                    <label id="error1401"></label>
+                    <br>
+
+                    <label id="ans401"></label>
+                    <!--<label id="ans402"></label>-->
+                    <button type="button" onclick="ToFahrenheit()" id="task401btn1">TO FAHRENHEIT</button>
+
+                    <button type="button" onclick="ToCelsius()" id="task401btn0">TO CELSIUS</button>
+
+                    <button type="button" onclick="tryMore()" id="task401btn2">RESET </button>
+                </form>
+            </div>
+
+
+            <!--Javascript functions for calculator start from here-->
+            <script>
+                //validating the user input for daily amount
+                function validateAmount() {
+                    var daily_amount = document.getElementById("temp").value;
+                    if (daily_amount.length == 0) {
+                        makeAlert("Amount is required...", "error1401", "red");
+                        return false;
+                    }
+
+                    if (!daily_amount.match(/[1-9]*\.[0-9]+/) && !daily_amount.match(/^[0-9]*$/)) {
+                        makeAlert("Accept both floating point and integer numbers...", "error1401", "red");
+                        return false;
+                    }
+
+
+                    makeAlert("", "error1401", "");
+                    return true;
+                }
+
+                //validate the user input for age
+
+
+                function ToFahrenheit(radius) {
+
+                    var radius = document.getElementById("temp").value;
+
+                    if (radius == "") {
+                        makeAlert("Please fill required fields...", "ans401", "");
+                        return false;
+                    }
+
+                    var circum = (radius * 9) / 5 + 32;
+                    var celsius = circum.toFixed(2);
+
+                    return document.getElementById("ans401").innerHTML =
+                        radius + "&#8451; is " + celsius + "&#8457;";
+
+
+                }
+
+
+                function ToCelsius(radius) {
+
+                    var radius = document.getElementById("temp").value;
+
+                    if (radius == "") {
+                        makeAlert("Please fill required fills...", "ans401", "");
+                        return false;
+                    }
+
+                    var area = ((radius - 32) * 5) / 9;
+                    var farah = area.toFixed(2);
+
+                    return document.getElementById("ans401").innerHTML =
+                        radius + "&#8457; is " + farah + "&#8451;";
+
+
+                }
+
+                //Reaet and try more
+                function tryMore() {
+                    location.reload();
+                }
+
+                //make alet message
+                function makeAlert(message, alertLocation, color) {
+                    document.getElementById(alertLocation).innerHTML = message;
+                    document.getElementById(alertLocation).style.color = color;
+                }
+            </script>
+            <!--End of javascript file-->
+
+
+            <div id="task401-p2">
+                <h1>Performence Check</h1>
+
+                <!--checkbox starts here---------------------------->
+                <section>
+                    <!--checkbox one-->
+                    <h4>Fair</h4>
+                    <div class="checkboxThree1401">
+
+                        <input type="checkbox" value="1" id="checkboxThreeInput1401" name="" />
+                        <label for="checkboxThreeInput1401"></label>
+                    </div>
+                </section>
+
+
+                <section>
+                    <!--checkbox one-->
+                    <h4>Good</h4>
+                    <div class="checkboxThree2401">
+
+                        <input type="checkbox" value="1" id="checkboxThreeInput2401" name="" />
+                        <label for="checkboxThreeInput2401"></label>
+                    </div>
+                </section>
+
+
+                <section>
+                    <!--checkbox one-->
+                    <h4>Excellent</h4>
+                    <div class="checkboxThree3401">
+
+                        <input type="checkbox" value="1" id="checkboxThreeInput3401" name="" />
+                        <label for="checkboxThreeInput3401"></label>
+                    </div>
+                </section>
+
+                <!--checkbox end here-------------------------------->
+                <button type="button" id="task401btn3" onclick="printIt()">
+                    SAVE
+                </button>
+
+                <script>
+                    function printIt() {
+                        window.print();
+                    }
+                </script>
+            </div>
+
+
+        </div>
+        <!--End of main container-->
+
+        <div id="task401-footer">
+            <!--Start of footer-->
+            <div id="task401-copy">
+                <p>&copy; Copyright 2016 <span id="kootkot">Aihaiti</span> - All Rights Reserved
+                </p>
+            </div>
+        </div>
+        <!--End of footer-->
+    </div>
+    <!--End of first container-->
+</body>
+
+</html>

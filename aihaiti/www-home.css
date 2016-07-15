@@ -1,0 +1,1184 @@
+/* Space out content a bit */
+
+body {
+    padding=0px;
+    margin: 0px;
+}
+
+/* This is for row #1*/
+
+#image {
+    height: 260px;
+    background-color: #0099CC;
+    position: relative;
+    top: -260px;
+}
+.home-row1 {
+    -webkit-animation-name: dwn;
+    animation-name: dwn;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes dwn {
+    from {
+        top: -260px;
+    }
+    to {
+        top: 0px;
+    }
+}
+@keyframes dwn {
+    from {
+        top: -260px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+/*This is for image*/
+
+.aihaiti {
+    position: relative;
+    top: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* This is for row #2 */
+
+.home-row2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* This is for row #2 */
+
+.name1, .name2 {
+    color: #27272b;
+}
+name1 {
+    position: relative;
+    top: -50px;
+    opacity: 0;
+    -webkit-animation-name: name;
+    animation-name: name;
+    -webkit-animation-name: name;
+    animation-name: name;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes name {
+    from {
+        top: -50px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+@keyframes name {
+    from {
+        top: -50px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+.name2 {
+    position: relative;
+    top: -100px;
+    opacity: 0;
+    -webkit-animation-name: skill;
+    animation-name: skill;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes skill {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+@keyframes skill {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+.buttons {
+    position: relative;
+    top: 20px;
+    margin-bottom: 105px;
+}
+.buttons button {
+    position: relative;
+    margin-top: 10px;
+}
+
+/*--js button---*/
+
+.btn-prim {
+    color: white;
+    background-color: #3a86c7;
+    -webkit-animation-name: bc1;
+    animation-name: bc1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    position: relative;
+    left: -400px;
+    opacity: 0;
+}
+@-webkit-keyframes bc1 {
+    from {
+        left: -400px;
+        opacity: 0;
+    }
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+}
+@keyframes bc1 {
+    from {
+        left: -400px;
+        opacity: 0;
+    }
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+}
+.btn-prim:hover {
+    color: white;
+    background-color: #286090;
+}
+
+/*--html button---*/
+
+.btn-suc {
+    color: white;
+    background-color: white;
+    -webkit-animation-name: bc2;
+    animation-name: bc2;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes bc2 {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: #52bf52;
+    }
+}
+@keyframes bc2 {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: #52bf52;
+    }
+}
+.btn-suc:hover {
+    color: white;
+    background-color: #449D44;
+}
+
+/*--css button---*/
+
+.btn-inf {
+    color: white;
+    background-color: white;
+    -webkit-animation-name: bc3;
+    animation-name: bc3;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes bc3 {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: #34c3ed;
+    }
+}
+@keyframes bc3 {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: #34c3ed;
+    }
+}
+.btn-inf:hover {
+    color: white;
+    background-color: #31B0D5;
+}
+
+/*---jQuery button--*/
+
+.btn-war {
+    color: white;
+    background-color: white;
+    -webkit-animation-name: bc4;
+    animation-name: bc4;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes bc4 {
+    from {
+        background-color: whit;
+    }
+    to {
+        background-color: #eda847;
+    }
+}
+@keyframes bc4 {
+    from {
+        background-color: whit;
+    }
+    to {
+        background-color: #eda847;
+    }
+}
+.btn-war:hover {
+    color: white;
+    background-color: #EC971F;
+}
+
+/*bootstrap button*/
+
+.btn-dan {
+    color: white;
+    background-color: #f23a35;
+    position: relative;
+    right: -400px;
+    -webkit-animation-name: bc5;
+    animation-name: bc5;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@-webkit-keyframes bc5 {
+    from {
+        right: -400px;
+        opacity: 0;
+    }
+    to {
+        right: 0px;
+        opacity: 1;
+    }
+}
+@keyframes bc5 {
+    from {
+        right: -400px;
+        opacity: 0;
+    }
+    to {
+        right: 0px;
+        opacity: 1;
+    }
+}
+.btn-dan:hover {
+    color: white;
+    background-color: #C9302C;
+}
+.career {
+    position: relative;
+    top: -7px;
+    margin-bottom: 40px;
+    font-size: 120%;
+    color: #0099CC;
+    -webkit-animation-name: appear;
+    animation-name: appear;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@-webkit-keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*portfolio title animation*/
+
+#port {
+    text-align: center;
+    opacity: 0;
+}
+.name3 {
+    -webkit-animation-name: port;
+    animation-name: port;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    position: relative;
+    top: -30px;
+    opacity: 0;
+}
+@-webkit-keyframes port {
+    from {
+        top: -30px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+@keyframes port {
+    from {
+        top: -30px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+.kootkot {
+    color: #0099CC;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.kootkot:hover {
+    color: #0099CC;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.aboutme {
+    line-height: 180%;
+    font-size: 110%;
+}
+.course-icon {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+}
+
+/*%%%%%%--animation of project names-----*/
+
+#pr1, #pr2, #pr3, #pr4, #pr5, #pr6 {
+    opacity: 0;
+}
+
+/*--project 1--*/
+
+.cdiv1 {
+    -webkit-animation-name: fin;
+    animation-name: fin;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@-webkit-keyframes fin {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fin {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.cdiv1:hover {
+    border: 1px solid #0099CC;
+}
+
+/*--project 2--*/
+
+.cdiv2 {
+    -webkit-animation-name: fin2;
+    animation-name: fin2;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@-webkit-keyframes fin2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fin2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.cdiv2:hover {
+    border: 1px solid #0099CC;
+}
+
+/*--project 3--*/
+
+.cdiv3 {
+    -webkit-animation-name: fin3;
+    animation-name: fin3;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@-webkit-keyframes fin3 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fin3 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.cdiv3:hover {
+    border: 1px solid #0099CC;
+}
+
+/*--project 4--*/
+
+.cdiv4 {
+    -webkit-animation-name: fin4;
+    animation-name: fin4;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@-webkit-keyframes fin4 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fin4 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.cdiv4:hover {
+    border: 1px solid #0099CC;
+}
+
+/*--project 5--*/
+
+.cdiv5 {
+    -webkit-animation-name: fin5;
+    animation-name: fin5;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@-webkit-keyframes fin5 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fin5 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.cdiv5:hover {
+    border: 1px solid #0099CC;
+}
+
+/*--project 6--*/
+
+.cdiv6 {
+    -webkit-animation-name: fin6;
+    animation-name: fin6;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@-webkit-keyframes fin6 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fin6 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.cdiv6:hover {
+    border: 1px solid #0099CC;
+}
+.course {
+    text-align: center;
+}
+.course-title {
+    text-align: center;
+    color: #0099CC;
+}
+#ghead {
+    text-align: center;
+    margin-bottom: -20px;
+    opacity: 0;
+    position: relative;
+    top: 10px;
+    opacity: 0;
+}
+.gh {
+    -webkit-animation-name: ghd;
+    animation-name: ghd;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes ghd {
+    from {
+        top: 0px;
+        opacity: 0;
+    }
+    to {
+        top: 40px;
+        opacity: 1;
+    }
+}
+@keyframes ghd {
+    from {
+        top: 0px;
+        opacity: 0;
+    }
+    to {
+        top: 40px;
+        opacity: 1;
+    }
+}
+.grade1, .grade2, .grade3 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+/*----animation for grade 1----*/
+
+#g1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    line-height: 60px;
+    position: relative;
+    top: 50px;
+    left: -200px;
+    background-color: #f2b972;
+    color: white;
+    opacity: 0;
+    margin-bottom: 50px;
+}
+.grade1 {
+    -webkit-animation-name: mov1;
+    animation-name: mov1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes mov1 {
+    from {
+        left: -200px;
+        opacity: 0;
+    }
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+}
+@keyframes mov1 {
+    from {
+        left: -200px;
+        opacity: 0;
+    }
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+}
+.grade1:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #f2b972;
+}
+
+/*animation for grade2*/
+
+#g2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    line-height: 80px;
+    position: relative;
+    top: 30px;
+    left: -400px;
+    background-color: #F15B43;
+    border: 1px solid #f15b43;
+    color: white;
+    opacity: 0;
+    margin-bottom: 50px;
+}
+.grade2 {
+    -webkit-animation-name: mov2;
+    animation-name: mov2;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes mov2 {
+    from {
+        left: -400px;
+        opacity: 0;
+    }
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+}
+@keyframes mov2 {
+    from {
+        left: -400px;
+        opacity: 0;
+    }
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+}
+.grade2:hover {
+    background-color: white;
+    color: black;
+}
+
+/*animation for grade 3*/
+
+#g3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    line-height: 100px;
+    position: relative;
+    top: 10px;
+    color: white;
+    background-color: #0099CC;
+    border: 1px solid #0099cc;
+    position: relative;
+    left: -700px;
+    opacity: 0;
+    margin-bottom: 50px;
+}
+.grade3 {
+    -webkit-animation-name: mov3;
+    animation-name: mov3;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes mov3 {
+    from {
+        left: -700px;
+        opacity: 0;
+    }
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+}
+@keyframes mov3 {
+    from {
+        left: -700px;
+        opacity: 0;
+    }
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+}
+.grade3:hover {
+    background-color: white;
+    color: black;
+}
+.grade-title {
+    color: #0099CC;
+    text-align: center;
+    font-weight: 200;
+}
+.home-row4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.home-row5 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.home-row7 {
+    position: relative;
+    top: 70px;
+    margin-bottom: 20px;
+}
+.home-row8 {
+    position: relative;
+    top: 140px;
+    margin-bottom: 30px;
+}
+.home-row9 {
+    position: relative;
+    top: 120px;
+}
+#thd {
+    text-align: center;
+    opacity: 0;
+}
+.testimonial-header {
+    -webkit-animation-name: test;
+    animation-name: test;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@-webkit-keyframes test {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes test {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.test1 {
+    height: 120px;
+    border: none;
+    border-bottom-left-radius: 20px;
+}
+.test2 {
+    height: 120px;
+    border: none;
+    border-bottom-left-radius: 20px;
+}
+#fd {
+    margin top: 30px;
+    padding: 0px;
+    font-size: 130%;
+    opacity: 0;
+}
+.t1 {
+    -webkit-animation-name: tm1;
+    animation-name: tm1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    position: relative;
+    left: -200px;
+}
+@-webkit-keyframes tm1 {
+    from {
+        opacity: 0;
+        left: -200px;
+    }
+    to {
+        opacity: 1;
+        left: 0;
+    }
+}
+@keyframes tm1 {
+    from {
+        opacity: 0;
+        left: -200px;
+    }
+    to {
+        opacity: 1;
+        left: 0;
+    }
+}
+#gf {
+    margin top: 30px;
+    padding: 0px;
+    font-size: 130%;
+    opacity: 0;
+}
+.t2 {
+    -webkit-animation-name: tm2;
+    animation-name: tm2;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    position: relative;
+    right: -200px;
+    opacity: 0;
+}
+@-webkit-keyframes tm2 {
+    from {
+        opacity: 0;
+        right: -200px;
+    }
+    to {
+        opacity: 1;
+        right: 0px;
+    }
+}
+@keyframes tm2 {
+    from {
+        opacity: 0;
+        right: -200px;
+    }
+    to {
+        opacity: 1;
+        right: 0px;
+    }
+}
+#tn1, #tn2 {
+    position: relative;
+    top: 15px;
+    float: right;
+    font-weight: light;
+    padding: 5px;
+    margin: 0px;
+    background-color: #0099CC;
+    color: white;
+    border-radius: 15px;
+    opacity: 0;
+}
+.tname1 {
+    -webkit-animation-name: tnove1;
+    animation-name: tnove1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    position: relative;
+    top: 40px;
+}
+@-webkit-keyframes tnove1 {
+    from {
+        opacity: 0;
+        top: 40px;
+    }
+    to {
+        opacity: 1;
+        top: 20px;
+    }
+}
+@keyframes tnove1 {
+    from {
+        opacity: 0;
+        top: 40px;
+    }
+    to {
+        opacity: 1;
+        top: 20px;
+    }
+}
+.tname2 {
+    -webkit-animation-name: tnove2;
+    animation-name: tnove2;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    position: relative;
+    top: 40px;
+}
+@-webkit-keyframes tnove2 {
+    from {
+        opacity: 0;
+        top: 40px;
+    }
+    to {
+        opacity: 1;
+        top: 20px;
+    }
+}
+@keyframes tnove2 {
+    from {
+        opacity: 0;
+        top: 40px;
+    }
+    to {
+        opacity: 1;
+        top: 20px;
+    }
+}
+.home-row11 {
+    position: relative;
+    top: 200px;
+    margin-bottom: 10px;
+}
+.home-row12 {
+    position: relative;
+    top: 200px;
+    margin-bottom: 40px;
+    width: 86%;
+    left: 7%;
+}
+#grh {
+    text-align: center;
+    opacity: 0;
+}
+.icon {
+    color: #0099CC;
+}
+.grade-header {
+    -webkit-animation-name: cont;
+    animation-name: cont;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    position: relative;
+    top: 30px;
+}
+@-webkit-keyframes cont {
+    from {
+        opacity: 0;
+        top: 30px;
+    }
+    to {
+        opacity: 1;
+        top: 0px;
+    }
+}
+@keyframes cont {
+    from {
+        opacity: 0;
+        top: 30px;
+    }
+    to {
+        opacity: 1;
+        top: 0px;
+    }
+}
+#add {
+    list-style: none;
+    font-size: 140%;
+    line-height: 230%;
+    opacity: 0;
+}
+#con {
+    list-style: none;
+    opacity: 0;
+    position: relative;
+    top: 87px;
+    float: right;
+}
+#con a li {
+    display: inline-block;
+    margin-right: 30px;
+}
+.address {
+    -webkit-animation-name: ad;
+    animation-name: ad;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    position: relative;
+    left: -400px;
+}
+@-webkit-keyframes ad {
+    from {
+        opacity: 0;
+        left: -400px;
+    }
+    to {
+        opacity: 1;
+        left: 0px;
+    }
+}
+@keyframes ad {
+    from {
+        opacity: 0;
+        left: -400px;
+    }
+    to {
+        opacity: 1;
+        left: 0px;
+    }
+}
+.contact {
+    -webkit-animation-name: co;
+    animation-name: co;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    position: relative;
+    right: -200px;
+}
+@-webkit-keyframes co {
+    from {
+        opacity: 0;
+        right: -200px;
+    }
+    to {
+        opacity: 1;
+        right: 0px;
+    }
+}
+@keyframes co {
+    from {
+        opacity: 0;
+        right: -200px;
+    }
+    to {
+        opacity: 1;
+        right: 0px;
+    }
+}
+.sicon {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    font-size: 180%;
+    background-color: white;
+    color: #0099cc;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid #0099cc;
+    margin-bottom: 8px;
+}
+.sicon:hover {
+    background-color: #0099cc;
+    color: white;
+}
+.lnk {
+    color: #0099cc;
+    text-decoration: none;
+}
+.lnk:hover {
+    color: white;
+    text-decoration: none;
+}
+.line {
+    position: relative;
+    top: 240px;
+    width: 80%;
+}
+
+/*Style the footer*/
+
+.foot {
+    text-align: center;
+}
+.row-footer {
+    position: relative;
+    top: 250px;
+    margin-bottom: 10px;
+}
+.foot>p>i>a {
+    color: #27272b;
+}
+.foot>p>i>a:hover {
+    color: #de4f4f;
+    font-weight: bold;
+}

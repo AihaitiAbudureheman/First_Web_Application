@@ -1,0 +1,268 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    max-width: 925px;
+    margin: 0 auto;
+}
+
+/*First container for header and main content area*/
+
+#one {
+    background-image: url(image/3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 2500px;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/*horizontal line*/
+
+#home-line {
+    width: 250px;
+    height: 2px;
+    background-color: #Ffffff;
+    border: none;
+}
+
+/*header*/
+
+#home-title {
+    color: #ffffff;
+    font-weight: lighter;
+}
+
+/*main content area*/
+
+#main {
+    max-width: 86%;
+    height: 2250px;
+    margin-left: 7%;
+    margin-right: 7%;
+    position: relative;
+    top: 85px;
+    margin-bottom: 100px;
+    margin: 0 auto;
+}
+
+/*change link color and add hover effect*/
+
+#main a {
+    color: #BBBBBB;
+}
+#main div:hover {
+    background-color: white;
+}
+
+/*These are all the container divs for all tasks*/
+
+#p1, #p2, #p3, #p4, #p5, #p6 {
+    width: 46%;
+    background-color: aliceblue;
+    float: left;
+    margin-bottom: 70px;
+    height: 600px;
+}
+
+/*Set up a margin*/
+
+#p1, #p3, #p5 {
+    margin-right: 8%;
+}
+
+/*Positioning*/
+
+#p2, #p4, #p6 {
+    position: relative;
+    top: 100px;
+}
+
+/*Positioning the images*/
+
+.task-image {
+    width: 88%;
+    margin-top: 6%;
+}
+
+/*Task description styles*/
+
+.task-detail {
+    text-align: left;
+    padding-left: 6%;
+    padding-right: 6%;
+    line-height: 160%;
+    font-size: 100%;
+}
+
+/*Contact form header*/
+
+#contact h1 {
+    color: #ffffff;
+    font-weight: lighter;
+    position: relative;
+    top: 50px;
+}
+
+/*Positioning horizontal line under the contact form header*/
+
+#contact hr {
+    position: relative;
+    top: 35px;
+}
+
+/*Style the container for contact form elements*/
+
+#contact {
+    background-image: url(image/3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 86%;
+    margin-left: 7%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+/*Form elements on the left*/
+
+#contact-form1 {
+    width: 45%;
+    margin-right: 8%;
+    margin-left: 1%;
+    float: left;
+    margin-top: 70px;
+}
+
+/*Form element on the right*/
+
+#contact-form2 {
+    width: 45%;
+    float: left;
+    margin-top: 70px;
+    margin-right: 1%;
+}
+
+/*Textarea style*/
+
+#contact-form2 form textarea {
+    width: 94.5%;
+    height: 188px;
+    background-color: aliceblue;
+    margin-bottom: 25px;
+    border: none;
+    color: #BBBBBB;
+    font-size: 140%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+/*Input box styling*/
+
+#contact-form1 form input {
+    width: 94.5%;
+    height: 50px;
+    background-color: aliceblue;
+    margin-bottom: 25px;
+    border: none;
+    color: #BBBBBB;
+    font-size: 130%;
+    padding-left: 5%;
+}
+
+/*button styling*/
+
+#contact-form3 form button {
+    width: 25%;
+    height: 65px;
+    background-color: aliceblue;
+    margin-bottom: 25px;
+    border: none;
+    color: #BBBBBB;
+    font-size: 150%;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/*Get rid of the outline when active*/
+
+input:focus, button:focus, textarea {
+    outline: none;
+}
+
+/*footer*/
+
+#home-footer {
+    background-color: #322B21;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+
+/*Footer texts*/
+
+#home-copy p {
+    position: relative;
+    top: 30px;
+    color: #BBBBBB;
+}
+#kootkot {
+    color: white;
+}
+
+/*When width less than or equal to 560px*/
+
+@media screen and (max-width:560px) {
+    #p1, #p2, #p3, #p4, #p5, #p6 {
+        width: 100%;
+    }
+    #p2, #p3, #p4, #p6 {
+        position: relative;
+        top: 0px;
+    }
+    #contact-form1, #contact-form2, #contact-form3 {
+        width: 100%;
+    }
+    #contact-form3 form button {
+        width: 100%;
+    }
+    #one, body, #contact {
+        background: #322B21;
+    }
+    #main {
+        height: 3500px;
+    }
+}
+
+/*When width greater than 560px and less than 900px*/
+
+@media screen and (min-width:560px) and (max-width:900px) {
+    #p1, #p2, #p3, #p4, #p5, #p6 {
+        height: 530px;
+    }
+}
+
+/*When width greater than 560px and less than 1035px*/
+
+@media screen and (min-width:560px) and (max-width:1035px) {
+    #contact-form3 form button {
+        width: 98%;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+    #home-copy {
+        width: 100%;
+        float: none;
+    }
+}
+
+/*When width less than or equal to 420px*/
+
+@media screen and (max-width:420px) {
+    #p1, #p2, #p3, #p4, #p5, #p6 {
+        height: 530px;
+    }
+    #contact-form3 form button {
+        width: 100%;
+    }
+}

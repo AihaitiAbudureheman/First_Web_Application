@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <title>How Old Are You?</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aihaiti's Portfolio Page">
+    <link rel="stylesheet" href="task101.css">
+</head>
+
+
+<body>
+    <!--Body starts here-->
+
+
+    <div id="task101-one">
+        <!--First container for header and main content area-->
+        <div id="">
+            <!--header-->
+            <img id="tasks-icon" src="ok.svg">
+            <h1 id="task101-title">TASK1.01</h1>
+            <hr id="task101-line">
+        </div>
+        <!--end of header-->
+
+
+        <div id="task101-main">
+            <!--Start of main content area-->
+            <div id="task101-p1">
+                <h1>How Old Are You?</h1>
+                <form id="task101-form">
+                    <label class="task101-label">...Birth year...</label>
+                    <br>
+                    <input onkeyup="validateBirthYear()" type="text" id="birth" value="">
+                    <br>
+                    <label id="year1"></label>
+                    <br>
+                    <label class="task101-label">...Current year...</label>
+                    <br>
+                    <input onkeyup="validateCurrentYear()" type="text" id="now" value="">
+                    <br>
+                    <label id="year2"></label>
+                    <br>
+
+                    <button type="button" onclick="calculateAge()" id="task101btn1">CALCULATE</button>
+                    <button type="button" onclick="tryMore()" id="task101btn2">CALCULATE AGAIN </button>
+                </form>
+                <p><span id="age1">ANS:</span></p>
+            </div>
+
+
+            <!--Javascript functions for calculator start from here-->
+            <script>
+                //validating the user input for birth year
+                function validateBirthYear() {
+                    var birth_year = document.getElementById("birth").value;
+                    if (birth_year.length == 0) {
+                        makeAlert("Year number is required !", "year1", "red");
+                        return false;
+                    }
+
+                    if (!birth_year.match(/^[0-9]{4}$/)) {
+                        makeAlert("Four digits with year format...,", "year1", "red");
+                        return false;
+                    }
+
+
+                    makeAlert("", "year1", "green");
+                    return true;
+                }
+
+
+                //validate the user input for current year
+                function validateCurrentYear() {
+                    var current_year = document.getElementById("now").value;
+                    if (current_year.length == 0) {
+                        makeAlert("Year number is required !", "year2", "red");
+                        return false;
+                    }
+
+                    if (!current_year.match(/^[0-9]{4}$/)) {
+                        makeAlert("Four digits with year format...", "year2", "red");
+                        return false;
+                    }
+
+
+                    makeAlert("", "year2", "");
+                    return true;
+                }
+
+                //Function for calculating age
+                function calculateAge(birthYear, currentYear) {
+                    var birthYear = document.getElementById("birth").value;
+                    var currentYear = document.getElementById("now").value;
+
+                    if (currentYear == "" || birthYear == "") {
+                        makeAlert("Please write year numbers...", "age1", "red");
+                        return false;
+                    }
+
+                    if ((currentYear - birthYear) < 0) {
+                        makeAlert("Current Year number should be greater than your Birth Year...", "age1", "red");
+                        return false;
+
+                    } else {
+                        makeAlert("", "age1", "");
+                        var age = document.getElementById("age1").innerHTML = "ANS: You are either " + (currentYear - birthYear) + " or " + (currentYear - birthYear - 1);
+                        return age;
+                    }
+                }
+
+                //Reset the calculator and try more
+                function tryMore() {
+                    location.reload();
+                }
+
+                //make alert when something is wrong during validation
+                function makeAlert(message, alertLocation, color) {
+                    document.getElementById(alertLocation).innerHTML = message;
+                    document.getElementById(alertLocation).style.color = color;
+                }
+            </script>
+            <!--End of javascript file-->
+
+
+            <div id="task101-p2">
+                <h1>Performence Check</h1>
+
+                <!--checkbox end here-------------------------------->
+                <section>
+                    <!--checkbox one-->
+                    <h4>Fair</h4>
+                    <div class="checkboxThree1">
+
+                        <input type="checkbox" value="1" id="checkboxThreeInput1" name="" />
+                        <label for="checkboxThreeInput1"></label>
+                    </div>
+                </section>
+
+
+                <section>
+                    <!--checkbox two-->
+                    <h4>Good</h4>
+                    <div class="checkboxThree2">
+
+                        <input type="checkbox" value="1" id="checkboxThreeInput2" name="" />
+                        <label for="checkboxThreeInput2"></label>
+                    </div>
+                </section>
+
+
+                <section>
+                    <!--checkbox three-->
+                    <h4>Excellent</h4>
+                    <div class="checkboxThree3">
+
+                        <input type="checkbox" value="1" id="checkboxThreeInput3" name="" />
+                        <label for="checkboxThreeInput3"></label>
+                    </div>
+                </section>
+
+                <!---checkbox end here-------------------------------->
+                <button type="button" id="task101btn3" onclick="printIt()">SAVE</button>
+
+
+                <script>
+                    function printIt() {
+                        window.print();
+                    }
+                </script>
+            </div>
+
+
+        </div>
+        <!--End of main container-->
+
+
+        <div id="task101-footer">
+            <!--Start of footer-->
+            <div id="task101-copy">
+                <p>&copy; Copyright 2016 <span id="kootkot">Aihaiti</span> - All Rights Reserved
+                </p>
+            </div>
+
+        </div>
+        <!--End of footer-->
+    </div>
+    <!--End of first container-->
+</body>
+
+</html>

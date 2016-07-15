@@ -1,0 +1,385 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+#task401-header {
+    position: relative;
+    top 50px;
+}
+
+/*First container for header and main content area*/
+
+#task401-one {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    max-width: 1160px;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+    padding: 0px;
+}
+img {
+    width: 160px;
+    height: 160px;
+}
+
+/*horizontal line*/
+
+#task401-line {
+    width: 250px;
+    height: 2px;
+    background-color: #322B21;
+    border: none;
+}
+
+/*header*/
+
+#task401-title {
+    color: #322B21;
+    font-weight: lighter;
+}
+
+/*main content area*/
+
+#task401-main {
+    width: 100%;
+    position: relative;
+    top: 85px;
+    height: 750px;
+    margin-bottom: 70px;
+}
+
+/*These are all the container divs for all tasks*/
+
+#task401-p1, #task401-p2 {
+    width: 46%;
+    float: left;
+}
+
+/*Set up a margin*/
+
+#task401-p1 {
+    margin-right: 8%;
+}
+
+/*Positioning*/
+
+#task401-form {
+    position: relative;
+    top: 20px;
+}
+#temp {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    height: 40px;
+    margin-bottom: 60px;
+    position: relative;
+    font-size: 120%;
+    color: #BBBBBB;
+}
+#error1401, #ans401 {
+    width: 90%;
+    position: relative;
+    top: -30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    float: left;
+}
+#ans401 {
+    color: #F2720C;
+    font-weight: bolder;
+}
+button {
+    cursor: pointer;
+}
+button:focus {
+    outline: none;
+}
+.task401-label {
+    position: relative;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: left;
+    top: -10px;
+    font-weight: bold;
+}
+#task401btn1, #task401btn2, #task401btn0 {
+    width: 30%;
+    height: 60px;
+    background-color: #F2720C;
+    color: white;
+    font-size: 110%;
+    border: none;
+    position: relative;
+    top: 130px;
+}
+#task401btn3 {
+    width: 100%;
+    height: 60px;
+    background-color: #F2720C;
+    color: white;
+    font-size: 110%;
+    border: none;
+    position: relative;
+    top: 104px;
+}
+
+/*Check boxes start from here*/
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+section h4 {
+    text-align: left;
+    position: relative;
+    top: 15px;
+}
+.checkboxThree1401 {
+    width: 120px;
+    height: 40px;
+    background: #333;
+    margin: 20px 60px;
+    border-radius: 0px;
+    position: relative;
+}
+.checkboxThree1401:before {
+    content: 'On';
+    position: absolute;
+    top: 12px;
+    left: 13px;
+    height: 2px;
+    color: #F2720C;
+    font-size: 16px;
+}
+.checkboxThree1401:after {
+    content: 'Off';
+    position: absolute;
+    top: 12px;
+    left: 84px;
+    height: 2px;
+    color: #111;
+    font-size: 16px;
+}
+.checkboxThree1401 label {
+    display: block;
+    width: 52px;
+    height: 22px;
+    border-radius: 0px;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 9px;
+    z-index: 1;
+    left: 12px;
+    background: #ddd;
+}
+
+/**
+ * Create the checkbox event for the label
+ */
+
+.checkboxThree1401 input[type=checkbox]:checked+ label {
+    left: 60px;
+    background: #F2720C;
+}
+
+/*checkbox 2 here*/
+
+section h4 {
+    text-align: left;
+}
+.checkboxThree2401 {
+    width: 120px;
+    height: 40px;
+    background: #333;
+    margin: 20px 60px;
+    border-radius: 0px;
+    position: relative;
+}
+.checkboxThree2401:before {
+    content: 'On';
+    position: absolute;
+    top: 12px;
+    left: 13px;
+    height: 2px;
+    color: #F2720C;
+    font-size: 16px;
+}
+.checkboxThree2401:after {
+    content: 'Off';
+    position: absolute;
+    top: 12px;
+    left: 84px;
+    height: 2px;
+    color: #111;
+    font-size: 16px;
+}
+.checkboxThree2401 label {
+    display: block;
+    width: 52px;
+    height: 22px;
+    border-radius: 0px;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 9px;
+    z-index: 1;
+    left: 12px;
+    background: #ddd;
+}
+
+/**
+ * Create the checkbox event for the label
+ */
+
+.checkboxThree2401 input[type=checkbox]:checked+ label {
+    left: 60px;
+    background: #F2720C;
+}
+
+/*Checkbox 3 here*/
+
+section h4 {
+    text-align: left;
+}
+.checkboxThree3401 {
+    width: 120px;
+    height: 40px;
+    background: #333;
+    margin: 20px 60px;
+    border-radius: 0px;
+    position: relative;
+}
+.checkboxThree3401:before {
+    content: 'On';
+    position: absolute;
+    top: 12px;
+    left: 13px;
+    height: 2px;
+    color: #F2720C;
+    font-size: 16px;
+}
+.checkboxThree3401:after {
+    content: 'Off';
+    position: absolute;
+    top: 12px;
+    left: 84px;
+    height: 2px;
+    color: #111;
+    font-size: 16px;
+}
+.checkboxThree3401 label {
+    display: block;
+    width: 52px;
+    height: 22px;
+    border-radius: 0px;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 9px;
+    z-index: 1;
+    left: 12px;
+    background: #ddd;
+}
+
+/**
+ * Create the checkbox event for the label
+ */
+
+.checkboxThree3401 input[type=checkbox]:checked+ label {
+    left: 60px;
+    background: #F2720C;
+}
+
+/**
+ * checkbox ends here
+ */
+
+
+/*footer*/
+
+#task401-footer {
+    background-color: #322B21;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Footer texts*/
+
+#task401-copy p {
+    position: relative;
+    top: 30px;
+    color: #BBBBBB;
+}
+#kootkot {
+    color: white;
+}
+
+/*When width less than or equal to 560px*/
+
+@media screen and (max-width:560px) {
+    #task401-p1, #task401-p2 {
+        width: 100%;
+    }
+    #task401-p2 {
+        position: relative;
+        top: 130px;
+    }
+    #temp, #task401-p2 {
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 90%;
+    }
+    #task401-main {
+        height: 1250px;
+    }
+    #task401btn1, #task401btn2, #task401btn0 {
+        width: 90%;
+        height: 60px;
+        background-color: #F2720C;
+        color: white;
+        font-size: 110%;
+        border: none;
+        position: relative;
+        top: 100px;
+        margin-bottom: 20px;
+    }
+}
+
+/*When width greater than 560px and less than 900px*/
+
+@media screen and (min-width:560px) and (max-width:900px) {
+    #task401-p1, #task401-p2 {
+        width: 90%;
+        margin-bottom: 130px;
+        position: relative;
+        left: 4%;
+    }
+    #task401-main {
+        height: 1250px;
+    }
+}
+
+/*When width greater than 560px and less than 1035px*/
+
+@media screen and (min-width:560px) and (max-width:1035px) {
+    #task401-copy {
+        width: 100%;
+        float: none;
+    }
+}
+
+/*When width less than or equal to 420px*/
+
+@media screen and (max-width:560px) {
+    #task401btn1, #task401btn2, #task401btn0 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    /*#age2{position: relative; top: -130px;}*/
+}

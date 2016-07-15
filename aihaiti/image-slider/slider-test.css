@@ -1,0 +1,39 @@
+/*style the body*/
+body {
+        
+        max-width: 100%;
+        min-width: 450px;
+        height: auto;
+        padding:0;
+        border:0;
+        margin:0 auto;
+        background-color: #d8d8d8;
+    
+}
+
+/*Position header and description*/
+h1{ text-align: center; color: #848484; font-weight: lighter;}
+
+/*style the slider*/
+#slider{
+        position: absolute;
+        top: 100px;
+        width:100%;
+        height:500px;
+        overflow:hidden;
+        margin:0 auto;
+       
+}
+   
+
+/*style the slider image*/
+#slider>img{
+        position: relative;
+        top: 0px;
+        left: 10%;
+        width: 80%;
+        height:500px;
+        float: left;
+        display:none;   
+}
+

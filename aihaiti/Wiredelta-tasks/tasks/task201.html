@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <title>How Much Snack</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aihaiti's Portfolio Page">
+    <link rel="stylesheet" href="task201.css">
+</head>
+
+
+<body><!--Body starts here-->
+
+
+<div id="task201-one"><!--First container for header and main content area-->
+<div id=""><!--header-->
+    <img src="ok.svg">
+    <h1 id="task201-title">TASK2.01</h1>
+    <hr id="task201-line">
+</div><!--end of header-->
+
+
+<div id="task201-main"><!--Start of main content area-->
+    <div id="task201-p1">
+        <h1>How Much Snack You Want?</h1>
+        <form id="task201-form">
+
+            <label class="task201-label">...Daily Amount...</label><br>
+
+            <input onkeyup="validateDailyAmount()" type="text"  id="daily"><label id="error1"></label><br>
+
+            <label class="task201-label">...Your Age...</label><br>
+
+             <input onkeyup="validateAge()" type="text"  id="age"><label id="error2"></label><br>
+
+
+           <button type="button" onclick="calculateSupply()" id="task201btn1">
+               CALCULATE
+            </button>
+
+
+           <button type="button" onclick="tryMore()" id="task201btn2">
+              CALCULATE AGAIN
+           </button>
+        </form>
+
+ <!--Answers appear here-->
+<p><span id="ans201">ANS:</span></p>
+    </div>
+
+
+<!--Javascript functions for calculator start from here-->
+<script>
+
+    //validating the user input for daily amount
+function validateDailyAmount()
+    {
+        var daily_amount=document.getElementById("daily").value;
+        if(daily_amount.length==0)
+            {
+            makeAlert("Daily amount is required !","error1","red");
+            return false;
+            }
+
+        if(!daily_amount.match(/^[0-9]*$/))
+           {
+            makeAlert("Only digits are valid...","error1","red");
+            return false;
+           }
+
+
+        makeAlert("","error1","green");
+        return true;
+    }
+
+
+
+//validate the user input for age
+function validateAge()
+    {
+        var age=document.getElementById("age").value;
+        if(age.length==0)
+            {
+            makeAlert("Your age is required...","error2","red");
+            return false;
+            }
+
+        if(!age.match(/^[0-9]*$/))
+           {
+            makeAlert("Only digits are valid...","error2","red");
+            return false;
+           }
+
+
+        makeAlert("","error2","");
+        return true;
+    }
+
+
+function calculateSupply(dailyAmount,age)
+    {
+        const MAX_AGE=100;
+        var dailyAmount=document.getElementById("daily").value;
+        var age=document.getElementById("age").value;
+
+        if(dailyAmount=="" || age=="")
+            {
+            makeAlert("Please fill required fields...","ans201","");
+            return false;
+            }
+
+       var years=MAX_AGE-age;
+       var today=new Date();
+       var thisYear=today.getFullYear();
+       var leap_counter=0;
+
+        for(var i=thisYear; i<years; i++)
+            {
+                if(i%400==0 || i%100==0 )
+                    leap_counter++;
+
+            }
+
+        var totalDays=(years*365)+leap_counter;
+        var totalAmount=dailyAmount*totalDays;
+
+        return document.getElementById("ans201").innerHTML=" You will need "+totalAmount+" to last you until the ripe old age of 100.";
+    }
+
+
+//Reset and try more
+function tryMore(){location.reload();}
+
+
+//Error alerts
+function makeAlert(message, alertLocation,color)
+    {
+        document.getElementById(alertLocation).innerHTML=message;
+        document.getElementById(alertLocation).style.color=color;
+    }
+
+</script><!--End of javascript file-->
+
+
+<div id="task201-p2">
+    <h1>Performence Check</h1>
+
+<!--checkbox starts here----------------------------->
+
+
+<section><!--checkbox one-->
+  <h4>Fair</h4>
+  	<div class="checkboxThree1201">
+
+  		<input type="checkbox" value="1" id="checkboxThreeInput1201" name="" />
+	  	<label for="checkboxThreeInput1201"></label>
+  	</div>
+</section>
+
+
+<section><!--checkbox one-->
+  <h4>Good</h4>
+  	<div class="checkboxThree2201">
+
+  		<input type="checkbox" value="1" id="checkboxThreeInput2201" name="" />
+	  	<label for="checkboxThreeInput2201"></label>
+  	</div>
+</section>
+
+
+<section><!--checkbox one-->
+  <h4>Excellent</h4>
+  	<div class="checkboxThree3201">
+
+  		<input type="checkbox" value="1" id="checkboxThreeInput3201" name="" />
+	  	<label for="checkboxThreeInput3201"></label>
+  	</div>
+</section>
+
+<!---checkbox end here--------------------------------><!--checkbox end here------------------------------->
+
+<button type="button" id="task201btn3"onclick="printIt()">
+    SAVE
+</button>
+
+
+<script>
+    function printIt(){window.print();}
+</script>
+</div>
+
+
+</div><!--End of main container-->
+
+
+<div id="task201-footer"><!--Start of footer-->
+    <div id="task201-copy">
+        <p>&copy; Copyright 2016 <span id="kootkot">Aihaiti</span>
+             - All Rights Reserved
+        </p>
+    </div>
+</div><!--End of footer-->
+
+</div> <!--End of first container-->
+</body>
+</html>

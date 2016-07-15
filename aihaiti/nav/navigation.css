@@ -1,0 +1,84 @@
+body {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*style the header*/
+
+h1 {
+    text-align: center;
+    color: chocolate;
+    font-weight: lighter;
+}
+
+/*style the positioning buttons*/
+
+.button {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.button button {
+    padding: 1em;
+    background-color: #c8c8c8;
+    border: none;
+    color: chocolate;
+    cursor: pointer;
+    font-size: 100%;
+}
+.button button:focus {
+    outline: none;
+}
+.focus:focus {
+    background-color: #585858;
+    color: white;
+}
+
+/*style for big container*/
+
+.s3-menu {
+    height: 60px;
+}
+
+/*Get rid of the default margin and padding of UL*/
+
+.s3-menu #s3-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*%%%%%%%%--The main idea is that change the display--%%%%%%%%%%%%% property from :inline-block   to block by using media qiery below */
+
+
+/*Style for the list items*/
+
+.s3-menu #s3-menu ul li {
+    display: inline-block;
+    /*this property will change to block */
+    padding-right: 0.8em;
+    padding-left: 0.3em;
+    line-height: 60px;
+    background-color: chocolate;
+}
+.s3-menu #s3-menu ul li:hover {
+    background: black;
+    cursor: pointer;
+}
+
+/*Style for the item with hyperlink*/
+
+.s3-menu #s3-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Media query for responsive feature : change the display to block*/
+
+@media (max-width: 767px) {
+    .s3-menu #s3-menu ul li {
+        display: block;
+    }
+    .s3-menu {
+        text-align: center;
+    }
+}

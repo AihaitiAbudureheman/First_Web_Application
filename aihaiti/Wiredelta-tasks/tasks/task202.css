@@ -1,0 +1,364 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+#task202-header {
+    position: relative;
+    top 50px;
+}
+
+/*First container for header and main content area*/
+
+#task202-one {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    max-width: 1160px;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+    padding: 0px;
+}
+img {
+    width: 160px;
+    height: 160px;
+}
+
+/*horizontal line*/
+
+#task202-line {
+    width: 250px;
+    height: 2px;
+    background-color: #322B21;
+    border: none;
+}
+
+/*header*/
+
+#task202-title {
+    color: #322B21;
+    font-weight: lighter;
+}
+
+/*main content area*/
+
+#task202-main {
+    width: 100%;
+    position: relative;
+    top: 85px;
+    height: 750px;
+    margin-bottom: 70px;
+}
+
+/*These are all the container divs for all tasks*/
+
+#task202-p1, #task202-p2 {
+    width: 46%;
+    float: left;
+}
+
+/*Set up a margin*/
+
+#task202-p1 {
+    margin-right: 8%;
+}
+
+/*Positioning*/
+
+#task202-form {
+    position: relative;
+    top: 20px;
+}
+#daily202, #age202 {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    height: 40px;
+    margin-bottom: 60px;
+    position: relative;
+    font-size: 120%;
+    color: #BBBBBB;
+}
+#error1202, #error2202, #ans202 {
+    width: 90%;
+    position: relative;
+    top: -30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    float: left;
+}
+#ans202 {
+    color: #F2720C;
+    font-weight: bolder;
+}
+button {
+    cursor: pointer;
+}
+button:focus {
+    outline: none;
+}
+.task202-label {
+    position: relative;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: left;
+    top: -10px;
+    font-weight: bold;
+}
+#task202btn1, #task202btn2 {
+    width: 47.5%;
+    height: 60px;
+    background-color: #F2720C;
+    color: white;
+    font-size: 110%;
+    border: none;
+    position: relative;
+    top: 135px;
+}
+#task202btn3 {
+    width: 100%;
+    height: 60px;
+    background-color: #F2720C;
+    color: white;
+    font-size: 110%;
+    border: none;
+    position: relative;
+    top: 104px;
+}
+
+/*Check boxes start from here*/
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+section h4 {
+    text-align: left;
+    position: relative;
+    top: 15px;
+}
+.checkboxThree1202 {
+    width: 120px;
+    height: 40px;
+    background: #333;
+    margin: 20px 60px;
+    border-radius: 0px;
+    position: relative;
+}
+.checkboxThree1202:before {
+    content: 'On';
+    position: absolute;
+    top: 12px;
+    left: 13px;
+    height: 2px;
+    color: #F2720C;
+    font-size: 16px;
+}
+.checkboxThree1202:after {
+    content: 'Off';
+    position: absolute;
+    top: 12px;
+    left: 84px;
+    height: 2px;
+    color: #111;
+    font-size: 16px;
+}
+.checkboxThree1202 label {
+    display: block;
+    width: 52px;
+    height: 22px;
+    border-radius: 0px;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 9px;
+    z-index: 1;
+    left: 12px;
+    background: #ddd;
+}
+
+/**
+ * Create the checkbox event for the label
+ */
+
+.checkboxThree1202 input[type=checkbox]:checked+ label {
+    left: 60px;
+    background: #F2720C;
+}
+
+/*checkbox 2 here*/
+
+section h4 {
+    text-align: left;
+}
+.checkboxThree2202 {
+    width: 120px;
+    height: 40px;
+    background: #333;
+    margin: 20px 60px;
+    border-radius: 0px;
+    position: relative;
+}
+.checkboxThree2202:before {
+    content: 'On';
+    position: absolute;
+    top: 12px;
+    left: 13px;
+    height: 2px;
+    color: #F2720C;
+    font-size: 16px;
+}
+.checkboxThree2202:after {
+    content: 'Off';
+    position: absolute;
+    top: 12px;
+    left: 84px;
+    height: 2px;
+    color: #111;
+    font-size: 16px;
+}
+.checkboxThree2202 label {
+    display: block;
+    width: 52px;
+    height: 22px;
+    border-radius: 0px;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 9px;
+    z-index: 1;
+    left: 12px;
+    background: #ddd;
+}
+
+/**
+ * Create the checkbox event for the label
+ */
+
+.checkboxThree2202 input[type=checkbox]:checked+ label {
+    left: 60px;
+    background: #F2720C;
+}
+
+/*Checkbox 3 here*/
+
+section h4 {
+    text-align: left;
+}
+.checkboxThree3202 {
+    width: 120px;
+    height: 40px;
+    background: #333;
+    margin: 20px 60px;
+    border-radius: 0px;
+    position: relative;
+}
+.checkboxThree3202:before {
+    content: 'On';
+    position: absolute;
+    top: 12px;
+    left: 13px;
+    height: 2px;
+    color: #F2720C;
+    font-size: 16px;
+}
+.checkboxThree3202:after {
+    content: 'Off';
+    position: absolute;
+    top: 12px;
+    left: 84px;
+    height: 2px;
+    color: #111;
+    font-size: 16px;
+}
+.checkboxThree3202 label {
+    display: block;
+    width: 52px;
+    height: 22px;
+    border-radius: 0px;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 9px;
+    z-index: 1;
+    left: 12px;
+    background: #ddd;
+}
+
+/**
+ * Create the checkbox event for the label
+ */
+
+.checkboxThree3202 input[type=checkbox]:checked+ label {
+    left: 60px;
+    background: #F2720C;
+}
+
+/**
+ * checkbox ends here
+ */
+
+
+/*footer*/
+
+#task202-footer {
+    background-color: #322B21;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Footer texts*/
+
+#task202-copy p {
+    position: relative;
+    top: 30px;
+    color: #BBBBBB;
+}
+#kootkot {
+    color: white;
+}
+
+/*When width less than or equal to 560px*/
+
+@media screen and (max-width:560px) {
+    #task202-p1, #task202-p2 {
+        width: 100%;
+    }
+    #task202-p2 {
+        position: relative;
+        top: 130px;
+    }
+    #task202-p2 {
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 90%;
+    }
+    #task202-main {
+        height: 1250px;
+    }
+}
+
+/*When width greater than 560px and less than 900px*/
+
+@media screen and (min-width:560px) and (max-width:900px) {
+    #task202-p1, #task202-p2 {
+        width: 90%;
+        margin-bottom: 130px;
+        position: relative;
+        left: 4%;
+    }
+    #task202-main {
+        height: 1250px;
+    }
+}
+
+/*When width greater than 560px and less than 1035px*/
+
+@media screen and (min-width:560px) and (max-width:1035px) {
+    #task202-copy {
+        width: 100%;
+        float: none;
+    }
+}
