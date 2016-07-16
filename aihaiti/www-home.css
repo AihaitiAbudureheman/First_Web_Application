@@ -257,7 +257,7 @@ name1 {
 }
 @-webkit-keyframes bc4 {
     from {
-        background-color: whit;
+        background-color: white;
     }
     to {
         background-color: #eda847;
@@ -265,7 +265,7 @@ name1 {
 }
 @keyframes bc4 {
     from {
-        background-color: whit;
+        background-color: white;
     }
     to {
         background-color: #eda847;
@@ -1010,13 +1010,13 @@ name1 {
     position: relative;
     top: 200px;
     margin-bottom: 10px;
+    text-align: center;
 }
 .home-row12 {
     position: relative;
     top: 200px;
     margin-bottom: 40px;
-    width: 86%;
-    left: 7%;
+    text-align: center;
 }
 #grh {
     text-align: center;
@@ -1061,6 +1061,10 @@ name1 {
     font-size: 140%;
     line-height: 230%;
     opacity: 0;
+    text-align: center;
+    margin: 0px;
+    position: relative;
+    left: -20px;
 }
 #con {
     list-style: none;
@@ -1076,32 +1080,31 @@ name1 {
 .address {
     -webkit-animation-name: ad;
     animation-name: ad;
-    -webkit-animation-duration: 0.5s;
-    animation-duration: 0.5s;
+    -webkit-animation-duration: 1;
+    animation-duration: 1s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     opacity: 0;
-    position: relative;
-    left: -400px;
+    top: -30px;
 }
 @-webkit-keyframes ad {
     from {
-        opacity: 0;
-        left: -400px;
+      opacity: 0;
+      top: -30px;
     }
     to {
         opacity: 1;
-        left: 0px;
+        top: 0px;
     }
 }
 @keyframes ad {
     from {
         opacity: 0;
-        left: -400px;
+        top: -30px;
     }
     to {
         opacity: 1;
-        left: 0px;
+        top: 0px;
     }
 }
 .contact {
